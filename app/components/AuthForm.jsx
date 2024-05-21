@@ -24,8 +24,8 @@ const AuthForm = () => {
     };
 
     return (
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center  bg-gray-100 w-[320px]">
-            <div className="w-full p-8 space-y-6 bg-white rounded shadow-md">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[320px]">
+            <div className="w-full p-8 space-y-6 bg-white rounded-md shadow-md">
                 <h2 className="text-2xl font-bold text-center text-black">{isLoginForm ? 'Вход в аккаунт' : 'Регистрация'}</h2>
                 <Formik
                     initialValues={isLoginForm ? { email: '', password: '' } : { name: '', email: '', password: '' }}
